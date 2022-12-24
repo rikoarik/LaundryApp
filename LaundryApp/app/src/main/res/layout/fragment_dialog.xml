@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    app:cardCornerRadius="20dp"
+    tools:context=".dialogFragment">
+
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardCornerRadius="20dp"
+       android:backgroundTint="@color/white">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Detail Pesanan"
+           android:layout_marginTop="10dp"
+           android:textColor="@color/design_default_color_primary"
+           android:textSize="26dp"
+           android:textStyle="bold"
+           android:gravity="center"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="50dp"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"
+           android:layout_marginBottom="10dp"
+           android:background="@drawable/bg_circle_radius"
+           android:backgroundTint="@color/design_default_color_primary"
+           android:elevation="10dp"
+           android:outlineSpotShadowColor="@color/design_default_color_primary">
+
+           <TextView
+               android:id="@+id/namadetail"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="nama"
+               android:textColor="@color/white"
+               android:textSize="20dp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/tgldetail"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/namadetail"
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="5dp"
+               android:gravity="center"
+               android:text="tgl"
+               android:textColor="@color/white"
+               android:textSize="12dp" />
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_marginTop="110dp"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"
+           android:padding="10dp"
+           android:background="@drawable/bg_circle_radius"
+           android:backgroundTint="@color/design_default_color_primary"
+           android:layout_marginBottom="10dp"
+           android:layout_height="match_parent">
+
+           <TableLayout
+               android:id="@+id/table"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:stretchColumns="1">
+               <TableRow>
+                   <TextView
+                       android:text="Jenis Barang"
+                       android:gravity="left"
+                       android:textColor="@color/white"
+                       android:padding="3dip" />
+                   <TextView
+                       android:text="Jumlah Barang"
+                       android:textColor="@color/white"
+                       android:gravity="center"
+                       android:padding="3dip" />
+               </TableRow>
+
+               <TableRow>
+                   <TextView
+                       android:id="@+id/jenisBarang"
+                       android:text="Kaos \n"
+                       android:padding="3dip"
+                       android:textColor="@color/white"/>
+                   <TextView
+                       android:id="@+id/totalBarang"
+                       android:text="0"
+                       android:textColor="@color/white"
+                       android:gravity="center"
+                       android:padding="3dip" />
+               </TableRow>
+           </TableLayout>
+
+           <TextView
+               android:id="@+id/text2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/table"
+               android:layout_marginTop="10dp"
+               android:text="Total Barang :"
+               android:textColor="@color/white"/>
+
+           <TextView
+               android:id="@+id/totalItem"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/table"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="10dp"
+               android:layout_toEndOf="@+id/text3"
+               android:text="a"
+               android:textColor="@color/white" />
+
+           <TextView
+               android:id="@+id/text3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/text2"
+               android:layout_marginTop="10dp"
+               android:text="Total Harga :"
+               android:textColor="@color/white"/>
+
+
+           <TextView
+               android:id="@+id/totalPrice"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/totalItem"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="10dp"
+               android:layout_toEndOf="@+id/text3"
+               android:text="a"
+               android:textColor="@color/white" />
+
+           <Button
+               android:id="@+id/btcancel"
+               android:layout_width="wrap_content"
+               android:layout_height="35dp"
+               android:layout_below="@+id/text3"
+               android:layout_alignParentEnd="true"
+
+               android:layout_marginTop="10dp"
+               android:background="@drawable/bg_circle_radius"
+               android:backgroundTint="@color/white"
+               android:text="Cancel"
+               android:textAllCaps="false"
+               android:textColor="@color/design_default_color_primary" />
+
+       </RelativeLayout>
+
+
+   </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>
